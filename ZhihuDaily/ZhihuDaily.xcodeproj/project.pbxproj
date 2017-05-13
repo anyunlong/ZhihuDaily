@@ -25,6 +25,13 @@
 		E1999DDA1EC3432600A5A02C /* ZDThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */; };
 		E1A322BC1EC6C66100F6AFD0 /* ZDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */; };
 		E1A322BE1EC6C9E400F6AFD0 /* ZDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322BD1EC6C9E400F6AFD0 /* ZDBaseViewController.swift */; };
+		E1A322D11EC6E18B00F6AFD0 /* ZDHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A322D01EC6E18B00F6AFD0 /* ZDHomeViewController.xib */; };
+		E1A322D51EC6E4C500F6AFD0 /* ZDRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322D41EC6E4C500F6AFD0 /* ZDRotationView.swift */; };
+		E1A322D71EC6E4FD00F6AFD0 /* ZDRotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A322D61EC6E4FD00F6AFD0 /* ZDRotationView.xib */; };
+		E1A322DA1EC6E9D700F6AFD0 /* ZDNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322D81EC6E9D700F6AFD0 /* ZDNewsCell.swift */; };
+		E1A322DB1EC6E9D700F6AFD0 /* ZDNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A322D91EC6E9D700F6AFD0 /* ZDNewsCell.xib */; };
+		E1A322DD1EC6F06F00F6AFD0 /* ZDStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322DC1EC6F06F00F6AFD0 /* ZDStory.swift */; };
+		E1A322E11EC6F36E00F6AFD0 /* ZDLatestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322E01EC6F36E00F6AFD0 /* ZDLatestViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +58,13 @@
 		E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThemeViewController.swift; sourceTree = "<group>"; };
 		E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDNavigationController.swift; sourceTree = "<group>"; };
 		E1A322BD1EC6C9E400F6AFD0 /* ZDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBaseViewController.swift; sourceTree = "<group>"; };
+		E1A322D01EC6E18B00F6AFD0 /* ZDHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDHomeViewController.xib; sourceTree = "<group>"; };
+		E1A322D41EC6E4C500F6AFD0 /* ZDRotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDRotationView.swift; sourceTree = "<group>"; };
+		E1A322D61EC6E4FD00F6AFD0 /* ZDRotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDRotationView.xib; sourceTree = "<group>"; };
+		E1A322D81EC6E9D700F6AFD0 /* ZDNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDNewsCell.swift; sourceTree = "<group>"; };
+		E1A322D91EC6E9D700F6AFD0 /* ZDNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDNewsCell.xib; sourceTree = "<group>"; };
+		E1A322DC1EC6F06F00F6AFD0 /* ZDStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDStory.swift; sourceTree = "<group>"; };
+		E1A322E01EC6F36E00F6AFD0 /* ZDLatestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLatestViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +136,7 @@
 			children = (
 				E1999DC91EC2DFB200A5A02C /* ZDTheme.swift */,
 				E1999DCB1EC2F52A00A5A02C /* ZDObject.swift */,
+				E1A322DC1EC6F06F00F6AFD0 /* ZDStory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				E1999DC71EC2DF6E00A5A02C /* ZDThemesViewModel.swift */,
+				E1A322E01EC6F36E00F6AFD0 /* ZDLatestViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -158,9 +174,14 @@
 				E1999DD11EC3029F00A5A02C /* ZDThemeCell.swift */,
 				E1999DD21EC3029F00A5A02C /* ZDThemeCell.xib */,
 				E1999DD51EC332F600A5A02C /* ZDHomeViewController.swift */,
+				E1A322D01EC6E18B00F6AFD0 /* ZDHomeViewController.xib */,
 				E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */,
 				E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */,
 				E1A322BD1EC6C9E400F6AFD0 /* ZDBaseViewController.swift */,
+				E1A322D41EC6E4C500F6AFD0 /* ZDRotationView.swift */,
+				E1A322D61EC6E4FD00F6AFD0 /* ZDRotationView.xib */,
+				E1A322D81EC6E9D700F6AFD0 /* ZDNewsCell.swift */,
+				E1A322D91EC6E9D700F6AFD0 /* ZDNewsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,10 +267,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A322D71EC6E4FD00F6AFD0 /* ZDRotationView.xib in Resources */,
 				E138274D1EBF518B005F0726 /* LaunchScreen.storyboard in Resources */,
 				E1999DD41EC3029F00A5A02C /* ZDThemeCell.xib in Resources */,
 				E1999DBF1EC190E800A5A02C /* ZDMenuViewController.xib in Resources */,
 				E138274A1EBF518B005F0726 /* Assets.xcassets in Resources */,
+				E1A322D11EC6E18B00F6AFD0 /* ZDHomeViewController.xib in Resources */,
+				E1A322DB1EC6E9D700F6AFD0 /* ZDNewsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,15 +335,19 @@
 				E1999DCC1EC2F52A00A5A02C /* ZDObject.swift in Sources */,
 				E1999DD81EC3408600A5A02C /* ZhihuDailyCommon.swift in Sources */,
 				E1999DC81EC2DF6E00A5A02C /* ZDThemesViewModel.swift in Sources */,
+				E1A322DD1EC6F06F00F6AFD0 /* ZDStory.swift in Sources */,
 				E1999DD61EC332F600A5A02C /* ZDHomeViewController.swift in Sources */,
+				E1A322DA1EC6E9D700F6AFD0 /* ZDNewsCell.swift in Sources */,
 				E1999DCA1EC2DFB200A5A02C /* ZDTheme.swift in Sources */,
 				E1999DC41EC2BAF700A5A02C /* YLNetworkTool.swift in Sources */,
+				E1A322D51EC6E4C500F6AFD0 /* ZDRotationView.swift in Sources */,
 				E1A322BE1EC6C9E400F6AFD0 /* ZDBaseViewController.swift in Sources */,
 				E1999DDA1EC3432600A5A02C /* ZDThemeViewController.swift in Sources */,
 				E1999DC61EC2D99800A5A02C /* YLNetworkTool+Extension.swift in Sources */,
 				E1999DD31EC3029F00A5A02C /* ZDThemeCell.swift in Sources */,
 				E1A322BC1EC6C66100F6AFD0 /* ZDNavigationController.swift in Sources */,
 				E13827431EBF518B005F0726 /* AppDelegate.swift in Sources */,
+				E1A322E11EC6F36E00F6AFD0 /* ZDLatestViewModel.swift in Sources */,
 				E1999DBE1EC190E800A5A02C /* ZDMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

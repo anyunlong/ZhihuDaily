@@ -8,6 +8,7 @@ target 'ZhihuDaily' do
   # Pods for ZhihuDaily
 
   pod 'Alamofire', '~> 4.4'
+  pod 'Kingfisher', '~> 3.0'
   pod 'SwiftyJSON'
 
   pod 'MMDrawerController', '~> 0.5.7'

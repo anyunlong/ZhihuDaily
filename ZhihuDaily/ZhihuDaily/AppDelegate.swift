@@ -30,7 +30,6 @@ extension AppDelegate {
         window?.backgroundColor = UIColor.white
         
         let homeVC = ZDHomeViewController()
-        homeVC.view.backgroundColor = UIColor.orange
         let drawerController = MMDrawerController(center: ZDNavigationController(rootViewController: homeVC), leftDrawerViewController: ZDMenuViewController(), rightDrawerViewController: nil)
         drawerController?.openDrawerGestureModeMask = .all
         drawerController?.closeDrawerGestureModeMask = .all
