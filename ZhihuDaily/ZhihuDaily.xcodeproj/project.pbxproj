@@ -7,21 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2439AC25D7840F096B260375 /* Pods_ZhihuDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F91B16E11C241F8E08ADAF6 /* Pods_ZhihuDaily.framework */; };
 		E13827431EBF518B005F0726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13827421EBF518B005F0726 /* AppDelegate.swift */; };
-		E13827451EBF518B005F0726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13827441EBF518B005F0726 /* ViewController.swift */; };
-		E13827481EBF518B005F0726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13827461EBF518B005F0726 /* Main.storyboard */; };
 		E138274A1EBF518B005F0726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13827491EBF518B005F0726 /* Assets.xcassets */; };
 		E138274D1EBF518B005F0726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E138274B1EBF518B005F0726 /* LaunchScreen.storyboard */; };
+		E1999DBE1EC190E800A5A02C /* ZDMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DBC1EC190E800A5A02C /* ZDMenuViewController.swift */; };
+		E1999DBF1EC190E800A5A02C /* ZDMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1999DBD1EC190E800A5A02C /* ZDMenuViewController.xib */; };
+		E1999DC41EC2BAF700A5A02C /* YLNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DC31EC2BAF700A5A02C /* YLNetworkTool.swift */; };
+		E1999DC61EC2D99800A5A02C /* YLNetworkTool+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DC51EC2D99800A5A02C /* YLNetworkTool+Extension.swift */; };
+		E1999DC81EC2DF6E00A5A02C /* ZDThemesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DC71EC2DF6E00A5A02C /* ZDThemesViewModel.swift */; };
+		E1999DCA1EC2DFB200A5A02C /* ZDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DC91EC2DFB200A5A02C /* ZDTheme.swift */; };
+		E1999DCC1EC2F52A00A5A02C /* ZDObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DCB1EC2F52A00A5A02C /* ZDObject.swift */; };
+		E1999DD31EC3029F00A5A02C /* ZDThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DD11EC3029F00A5A02C /* ZDThemeCell.swift */; };
+		E1999DD41EC3029F00A5A02C /* ZDThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1999DD21EC3029F00A5A02C /* ZDThemeCell.xib */; };
+		E1999DD61EC332F600A5A02C /* ZDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DD51EC332F600A5A02C /* ZDHomeViewController.swift */; };
+		E1999DD81EC3408600A5A02C /* ZhihuDailyCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DD71EC3408600A5A02C /* ZhihuDailyCommon.swift */; };
+		E1999DDA1EC3432600A5A02C /* ZDThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */; };
+		E1A322BC1EC6C66100F6AFD0 /* ZDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */; };
+		E1A322BE1EC6C9E400F6AFD0 /* ZDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322BD1EC6C9E400F6AFD0 /* ZDBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27DB5A190516219855F69F8B /* Pods-ZhihuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.debug.xcconfig"; sourceTree = "<group>"; };
+		4F91B16E11C241F8E08ADAF6 /* Pods_ZhihuDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhihuDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE07E0C6857C7AB5FF8FACE6 /* Pods-ZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
 		E138273F1EBF518B005F0726 /* ZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13827421EBF518B005F0726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E13827441EBF518B005F0726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E13827471EBF518B005F0726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E13827491EBF518B005F0726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E138274C1EBF518B005F0726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E138274E1EBF518B005F0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1999DB31EC1673000A5A02C /* ZhihuDaily-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZhihuDaily-Bridge.h"; sourceTree = "<group>"; };
+		E1999DBC1EC190E800A5A02C /* ZDMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMenuViewController.swift; sourceTree = "<group>"; };
+		E1999DBD1EC190E800A5A02C /* ZDMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDMenuViewController.xib; sourceTree = "<group>"; };
+		E1999DC31EC2BAF700A5A02C /* YLNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNetworkTool.swift; sourceTree = "<group>"; };
+		E1999DC51EC2D99800A5A02C /* YLNetworkTool+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YLNetworkTool+Extension.swift"; sourceTree = "<group>"; };
+		E1999DC71EC2DF6E00A5A02C /* ZDThemesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThemesViewModel.swift; sourceTree = "<group>"; };
+		E1999DC91EC2DFB200A5A02C /* ZDTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTheme.swift; sourceTree = "<group>"; };
+		E1999DCB1EC2F52A00A5A02C /* ZDObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDObject.swift; sourceTree = "<group>"; };
+		E1999DD11EC3029F00A5A02C /* ZDThemeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThemeCell.swift; sourceTree = "<group>"; };
+		E1999DD21EC3029F00A5A02C /* ZDThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDThemeCell.xib; sourceTree = "<group>"; };
+		E1999DD51EC332F600A5A02C /* ZDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDHomeViewController.swift; sourceTree = "<group>"; };
+		E1999DD71EC3408600A5A02C /* ZhihuDailyCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhihuDailyCommon.swift; sourceTree = "<group>"; };
+		E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThemeViewController.swift; sourceTree = "<group>"; };
+		E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDNavigationController.swift; sourceTree = "<group>"; };
+		E1A322BD1EC6C9E400F6AFD0 /* ZDBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +58,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2439AC25D7840F096B260375 /* Pods_ZhihuDaily.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6094F7A9428ECCE86107EF43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27DB5A190516219855F69F8B /* Pods-ZhihuDaily.debug.xcconfig */,
+				CE07E0C6857C7AB5FF8FACE6 /* Pods-ZhihuDaily.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E13827361EBF518B005F0726 = {
 			isa = PBXGroup;
 			children = (
 				E13827411EBF518B005F0726 /* ZhihuDaily */,
 				E13827401EBF518B005F0726 /* Products */,
+				6094F7A9428ECCE86107EF43 /* Pods */,
+				E9FAA902474115CFC96B1517 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +95,91 @@
 		E13827411EBF518B005F0726 /* ZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				E1999DA51EC04CD300A5A02C /* Classes */,
 				E13827421EBF518B005F0726 /* AppDelegate.swift */,
-				E13827441EBF518B005F0726 /* ViewController.swift */,
-				E13827461EBF518B005F0726 /* Main.storyboard */,
 				E13827491EBF518B005F0726 /* Assets.xcassets */,
 				E138274B1EBF518B005F0726 /* LaunchScreen.storyboard */,
 				E138274E1EBF518B005F0726 /* Info.plist */,
+				E1999DB31EC1673000A5A02C /* ZhihuDaily-Bridge.h */,
+				E1999DD71EC3408600A5A02C /* ZhihuDailyCommon.swift */,
 			);
 			path = ZhihuDaily;
+			sourceTree = "<group>";
+		};
+		E1999DA51EC04CD300A5A02C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E1999DAE1EC0501700A5A02C /* Tool */,
+				E1999DA61EC04D1300A5A02C /* Model */,
+				E1999DB71EC18DF900A5A02C /* View */,
+				E1999DA81EC04D1300A5A02C /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E1999DA61EC04D1300A5A02C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1999DC91EC2DFB200A5A02C /* ZDTheme.swift */,
+				E1999DCB1EC2F52A00A5A02C /* ZDObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1999DA81EC04D1300A5A02C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1999DC71EC2DF6E00A5A02C /* ZDThemesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1999DAE1EC0501700A5A02C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E1999DC01EC2AE3900A5A02C /* Network */,
+				E1999DAF1EC0502000A5A02C /* UI */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E1999DAF1EC0502000A5A02C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E1999DB71EC18DF900A5A02C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1999DBC1EC190E800A5A02C /* ZDMenuViewController.swift */,
+				E1999DBD1EC190E800A5A02C /* ZDMenuViewController.xib */,
+				E1999DD11EC3029F00A5A02C /* ZDThemeCell.swift */,
+				E1999DD21EC3029F00A5A02C /* ZDThemeCell.xib */,
+				E1999DD51EC332F600A5A02C /* ZDHomeViewController.swift */,
+				E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */,
+				E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */,
+				E1A322BD1EC6C9E400F6AFD0 /* ZDBaseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1999DC01EC2AE3900A5A02C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E1999DC31EC2BAF700A5A02C /* YLNetworkTool.swift */,
+				E1999DC51EC2D99800A5A02C /* YLNetworkTool+Extension.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E9FAA902474115CFC96B1517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F91B16E11C241F8E08ADAF6 /* Pods_ZhihuDaily.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E13827511EBF518B005F0726 /* Build configuration list for PBXNativeTarget "ZhihuDaily" */;
 			buildPhases = (
+				D424F06212C9C27EE615FA31 /* [CP] Check Pods Manifest.lock */,
 				E138273B1EBF518B005F0726 /* Sources */,
 				E138273C1EBF518B005F0726 /* Frameworks */,
 				E138273D1EBF518B005F0726 /* Resources */,
+				96F141C4984FA8AD82E0D00F /* [CP] Embed Pods Frameworks */,
+				EEBB122E7CFB1A0C20EB988E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -90,6 +211,7 @@
 		E13827371EBF518B005F0726 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZD;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Oneself;
@@ -125,34 +247,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				E138274D1EBF518B005F0726 /* LaunchScreen.storyboard in Resources */,
+				E1999DD41EC3029F00A5A02C /* ZDThemeCell.xib in Resources */,
+				E1999DBF1EC190E800A5A02C /* ZDMenuViewController.xib in Resources */,
 				E138274A1EBF518B005F0726 /* Assets.xcassets in Resources */,
-				E13827481EBF518B005F0726 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96F141C4984FA8AD82E0D00F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D424F06212C9C27EE615FA31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBB122E7CFB1A0C20EB988E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhihuDaily/Pods-ZhihuDaily-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E138273B1EBF518B005F0726 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E13827451EBF518B005F0726 /* ViewController.swift in Sources */,
+				E1999DCC1EC2F52A00A5A02C /* ZDObject.swift in Sources */,
+				E1999DD81EC3408600A5A02C /* ZhihuDailyCommon.swift in Sources */,
+				E1999DC81EC2DF6E00A5A02C /* ZDThemesViewModel.swift in Sources */,
+				E1999DD61EC332F600A5A02C /* ZDHomeViewController.swift in Sources */,
+				E1999DCA1EC2DFB200A5A02C /* ZDTheme.swift in Sources */,
+				E1999DC41EC2BAF700A5A02C /* YLNetworkTool.swift in Sources */,
+				E1A322BE1EC6C9E400F6AFD0 /* ZDBaseViewController.swift in Sources */,
+				E1999DDA1EC3432600A5A02C /* ZDThemeViewController.swift in Sources */,
+				E1999DC61EC2D99800A5A02C /* YLNetworkTool+Extension.swift in Sources */,
+				E1999DD31EC3029F00A5A02C /* ZDThemeCell.swift in Sources */,
+				E1A322BC1EC6C66100F6AFD0 /* ZDNavigationController.swift in Sources */,
 				E13827431EBF518B005F0726 /* AppDelegate.swift in Sources */,
+				E1999DBE1EC190E800A5A02C /* ZDMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E13827461EBF518B005F0726 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E13827471EBF518B005F0726 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E138274B1EBF518B005F0726 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,26 +433,32 @@
 		};
 		E13827521EBF518B005F0726 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27DB5A190516219855F69F8B /* Pods-ZhihuDaily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4YLDDZQ28N;
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.ccut.ZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZhihuDaily/ZhihuDaily-Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		E13827531EBF518B005F0726 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE07E0C6857C7AB5FF8FACE6 /* Pods-ZhihuDaily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4YLDDZQ28N;
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.ccut.ZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZhihuDaily/ZhihuDaily-Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +482,7 @@
 				E13827531EBF518B005F0726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
