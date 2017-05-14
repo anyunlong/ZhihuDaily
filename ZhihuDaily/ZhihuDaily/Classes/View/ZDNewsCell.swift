@@ -14,14 +14,22 @@ class ZDNewsCell: UITableViewCell {
 
     @IBOutlet weak var iconImageView: UIImageView!
     
+    @IBOutlet weak var multipicImageView: UIImageView!
+    
     var story: ZDStory? {
         
         didSet {
             
-            titleTextView.text = story?.title
+            guard let story = story else {
+                return
+            }
             
-            let url = URL(string: story?.image ?? "")
+            titleTextView.text = story.title
+            
+            let url = URL(string: story.image ?? "")
             iconImageView.kf.setImage(with: ImageResource(downloadURL: url!))
+            
+            multipicImageView.isHidden = story.multipic ? false : true
         }
     }
 }

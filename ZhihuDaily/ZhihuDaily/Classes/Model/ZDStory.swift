@@ -13,4 +13,6 @@ class ZDStory: ZDObject {
     var ga_prefix: String?
     
     var image: String?
+    
+    var multipic: Bool = false
 }

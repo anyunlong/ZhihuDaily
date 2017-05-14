@@ -29,26 +29,35 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Morepic" translatesAutoresizingMaskIntoConstraints="NO" id="KPq-Os-DO9">
+                        <rect key="frame" x="351" y="55" width="40" height="11.5"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="uyz-2q-bXI" firstAttribute="bottom" secondItem="cp3-h9-Jcg" secondAttribute="bottom" id="31m-hB-Sb1"/>
                     <constraint firstItem="uyz-2q-bXI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="5WO-Gm-1Yc"/>
+                    <constraint firstItem="KPq-Os-DO9" firstAttribute="width" secondItem="cp3-h9-Jcg" secondAttribute="width" multiplier="2:5" id="7mU-JC-nrG"/>
                     <constraint firstItem="uyz-2q-bXI" firstAttribute="top" secondItem="cp3-h9-Jcg" secondAttribute="top" id="7uL-Sr-E9H"/>
                     <constraint firstItem="cp3-h9-Jcg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9Ul-yr-JiN"/>
                     <constraint firstItem="cp3-h9-Jcg" firstAttribute="leading" secondItem="uyz-2q-bXI" secondAttribute="trailing" constant="10" id="EHn-3i-J2X"/>
                     <constraint firstItem="cp3-h9-Jcg" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:4" id="Kpt-Um-wZz"/>
+                    <constraint firstItem="KPq-Os-DO9" firstAttribute="trailing" secondItem="cp3-h9-Jcg" secondAttribute="trailing" id="Uja-K6-WOT"/>
                     <constraint firstAttribute="bottomMargin" secondItem="cp3-h9-Jcg" secondAttribute="bottom" id="Wee-Nh-dG3"/>
+                    <constraint firstItem="KPq-Os-DO9" firstAttribute="height" secondItem="cp3-h9-Jcg" secondAttribute="height" multiplier="1:5" id="awT-lI-UXR"/>
                     <constraint firstItem="cp3-h9-Jcg" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="sOw-Mb-DAn"/>
+                    <constraint firstItem="KPq-Os-DO9" firstAttribute="bottom" secondItem="cp3-h9-Jcg" secondAttribute="bottom" id="xMq-YC-Emg"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="iconImageView" destination="cp3-h9-Jcg" id="2Bx-XL-FPD"/>
+                <outlet property="multipicImageView" destination="KPq-Os-DO9" id="lq6-CL-PjD"/>
                 <outlet property="titleTextView" destination="uyz-2q-bXI" id="Xtw-9K-dtT"/>
             </connections>
             <point key="canvasLocation" x="126.5" y="167.5"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Home_Morepic" width="32" height="14"/>
         <image name="Menu_Avatar" width="35" height="35"/>
     </resources>
 </document>
