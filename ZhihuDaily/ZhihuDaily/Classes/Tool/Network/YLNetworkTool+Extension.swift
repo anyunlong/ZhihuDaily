@@ -21,26 +21,72 @@ extension YLNetworkTool {
             
             let json = JSON(jsonObject)
             guard let themesJSON = json["others"].array else {
+                completion(nil)
                 return
             }
             completion(themesJSON)
         }
     }
     
-    class func latest(completion:@escaping (_ stories: [JSON]?) -> Void) {
+//    class func latest(completion:@escaping (_ dateString: String?, _ stories: [JSON]?) -> Void) {
+//        
+//        YLNetworkTool.request(URLString: "http://news-at.zhihu.com/api/4/news/latest") {
+//            
+//            guard let jsonObject = $0 else {
+//                completion(nil, nil)
+//                return
+//            }
+//            
+//            let json = JSON(jsonObject)
+//            let dateString = json["date"].stringValue
+//            guard let storiesJSON = json["stories"].array else {
+//                completion(nil, nil)
+//                return
+//            }
+//            completion(dateString, storiesJSON)
+//        }
+//    }
+//    
+//    class func before(dateString: String, completion: @escaping (_ dateString: String?, _ stories: [JSON]?) -> Void) {
+//        
+//        YLNetworkTool.request(URLString: "http://news-at.zhihu.com/api/4/news/before/\(dateString)") {
+//            
+//            guard let jsonObject = $0 else {
+//                completion(nil, nil)
+//                return
+//            }
+//            
+//            let json = JSON(jsonObject)
+//            let dateString = json["date"].stringValue
+//            guard let storiesJSON = json["stories"].array else {
+//                completion(nil, nil)
+//                return
+//            }
+//            completion(dateString, storiesJSON)
+//        }
+//    }
+    
+    class func stories(dateString: String? = nil, completion: @escaping (_ dateString: String?, _ stories: [JSON]?) -> Void) {
         
-        YLNetworkTool.request(URLString: "http://news-at.zhihu.com/api/4/news/latest") {
+        var routing = "latest"
+        if let dateString = dateString {
+            routing = "before/\(dateString)"
+        }
+        
+        YLNetworkTool.request(URLString: "http://news-at.zhihu.com/api/4/news/\(routing)") {
             
             guard let jsonObject = $0 else {
-                completion(nil)
+                completion(nil, nil)
                 return
             }
             
             let json = JSON(jsonObject)
+            let dateString = json["date"].stringValue
             guard let storiesJSON = json["stories"].array else {
+                completion(nil, nil)
                 return
             }
-            completion(storiesJSON)
+            completion(dateString, storiesJSON)
         }
     }
 }
