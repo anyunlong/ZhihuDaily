@@ -27,7 +27,7 @@ class ZDNewsCell: UITableViewCell {
             titleTextView.text = story.title
             
             let url = URL(string: story.image ?? "")
-            iconImageView.kf.setImage(with: ImageResource(downloadURL: url!))
+            iconImageView.kf.setImage(with: ImageResource(downloadURL: url!), placeholder: #imageLiteral(resourceName: "Image_Preview"))
             
             multipicImageView.isHidden = story.multipic ? false : true
         }

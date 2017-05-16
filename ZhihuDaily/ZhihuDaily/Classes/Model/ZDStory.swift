@@ -15,4 +15,6 @@ class ZDStory: ZDObject {
     var image: String?
     
     var multipic: Bool = false
+    
+    var id: String?
 }

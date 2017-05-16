@@ -11,6 +11,8 @@ class ZDNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationBar.isHidden = true
+        
         NotificationCenter.default.addObserver(self, selector: #selector(popToHome), name: NSNotification.Name(rawValue: ZHShouldPopToHomeNotification), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(pushTheme), name: NSNotification.Name(rawValue: ZHShouldPushThemeNotification), object: nil)
     }

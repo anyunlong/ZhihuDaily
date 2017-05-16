@@ -28,44 +28,6 @@ extension YLNetworkTool {
         }
     }
     
-//    class func latest(completion:@escaping (_ dateString: String?, _ stories: [JSON]?) -> Void) {
-//        
-//        YLNetworkTool.request(URLString: "http://news-at.zhihu.com/api/4/news/latest") {
-//            
-//            guard let jsonObject = $0 else {
-//                completion(nil, nil)
-//                return
-//            }
-//            
-//            let json = JSON(jsonObject)
-//            let dateString = json["date"].stringValue
-//            guard let storiesJSON = json["stories"].array else {
-//                completion(nil, nil)
-//                return
-//            }
-//            completion(dateString, storiesJSON)
-//        }
-//    }
-//    
-//    class func before(dateString: String, completion: @escaping (_ dateString: String?, _ stories: [JSON]?) -> Void) {
-//        
-//        YLNetworkTool.request(URLString: "http://news-at.zhihu.com/api/4/news/before/\(dateString)") {
-//            
-//            guard let jsonObject = $0 else {
-//                completion(nil, nil)
-//                return
-//            }
-//            
-//            let json = JSON(jsonObject)
-//            let dateString = json["date"].stringValue
-//            guard let storiesJSON = json["stories"].array else {
-//                completion(nil, nil)
-//                return
-//            }
-//            completion(dateString, storiesJSON)
-//        }
-//    }
-    
     class func stories(dateString: String? = nil, completion: @escaping (_ dateString: String?, _ stories: [JSON]?) -> Void) {
         
         var routing = "latest"
@@ -87,6 +49,19 @@ extension YLNetworkTool {
                 return
             }
             completion(dateString, storiesJSON)
+        }
+    }
+    
+    class func detailStory(id: String, completion:@escaping (_ story: Any?) -> Void) {
+        
+        YLNetworkTool.request(URLString: "http://news-at.zhihu.com/api/4/news/\(id)") {
+            
+            guard let jsonObject = $0 else {
+                completion(nil)
+                return
+            }
+            
+            completion(jsonObject)
         }
     }
 }

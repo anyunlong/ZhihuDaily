@@ -15,12 +15,8 @@ class ZDHomeViewController: ZDBaseViewController {
     
     fileprivate var isPullup = false
     
-    @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupUI()
 
         NotificationCenter.default.addObserver(self, selector: #selector(loadData), name: NSNotification.Name(rawValue: ZHHomePageShouldLoadDataNotification), object: nil)
     }
@@ -45,18 +41,8 @@ class ZDHomeViewController: ZDBaseViewController {
 // MARK: - UI
 extension ZDHomeViewController {
     
-    fileprivate func setupUI() {
-        
-        title = "home"
-        
-        automaticallyAdjustsScrollViewInsets = false
-        
-        setupTableView()
-    }
-    
-    private func setupTableView() {
-        
-        tableView.tableHeaderView = ZDRotationView.rotationView()
+    override func setupTableView() {
+        super.setupTableView()
         
         tableView.sectionHeaderHeight = 35
         tableView.rowHeight = 100
@@ -69,30 +55,30 @@ extension ZDHomeViewController {
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
-extension ZDHomeViewController: UITableViewDataSource, UITableViewDelegate {
+extension ZDHomeViewController {
     
     internal func numberOfSections(in tableView: UITableView) -> Int {
         return storiesViewModel.dayViewModels.count
     }
     
-    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return storiesViewModel.dayViewModels[section].day.stories.count
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: sectionHeaderViewID) as? ZDStorySectionHeaderView
-        
-        headerView?.dateString = storiesViewModel.dayViewModels[section].dateString
-        
-        return headerView
-    }
-    
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: newsCellID) as? ZDNewsCell ?? ZDNewsCell()
         
         cell.story = storiesViewModel.dayViewModels[indexPath.section].day.stories[indexPath.row]
         
         return cell
+    }
+    
+    internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: sectionHeaderViewID) as? ZDStorySectionHeaderView
+        
+        headerView?.dateString = storiesViewModel.dayViewModels[section].dateString
+        
+        return headerView
     }
     
     internal func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -102,5 +88,12 @@ extension ZDHomeViewController: UITableViewDataSource, UITableViewDelegate {
                 loadData()
             }
         }
+    }
+    
+    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let storyViewController = ZDStoryViewController()
+        storyViewController.storyId = storiesViewModel.dayViewModels[indexPath.section].day.stories[indexPath.row].id
+        navigationController?.pushViewController(storyViewController, animated: true)
     }
 }

@@ -26,3 +26,11 @@ class ZDThemeViewController: ZDBaseViewController {
         debugPrint("theme reload data ...")
     }
 }
+
+// MARK: - UI
+extension ZDThemeViewController {
+    
+    override func setupUI() {
+        
+    }
+}
