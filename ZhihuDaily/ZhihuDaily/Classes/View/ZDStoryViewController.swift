@@ -46,13 +46,15 @@ extension ZDStoryViewController {
     fileprivate func setupUI() {
         
         view.addSubview(storyToolbar)
-        view.addSubview(webView)
-        
         storyToolbar.snp.makeConstraints {
             $0.left.bottom.right.equalToSuperview()
             $0.height.equalTo(toolbarHeight)
         }
+        storyToolbar.returnButtonClosure = { [weak self] in
+            self?.navigationController?.popViewController(animated: true)
+        }
         
+        view.addSubview(webView)
         webView.snp.makeConstraints {
             $0.top.left.right.equalToSuperview()
             $0.bottom.equalTo(storyToolbar.snp.top)

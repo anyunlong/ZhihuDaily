@@ -8,6 +8,8 @@
 
 class ZDStoryToolbar: UIToolbar {
     
+    var returnButtonClosure: (() -> Void)?
+    
     class func storyToolbar() -> ZDStoryToolbar {
         
         let nib = UINib(nibName: "ZDStoryToolbar", bundle: nil)
@@ -18,7 +20,6 @@ class ZDStoryToolbar: UIToolbar {
     }
     
     @IBAction func clickReturnButton(_ sender: UIButton) {
-        
-        
+        returnButtonClosure?()
     }
 }
