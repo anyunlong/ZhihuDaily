@@ -9,4 +9,10 @@
 class ZDDetailStory: ZDObject {
     
     var body: String?
+    
+    var image_source: String?
+    
+    var image: String?
+    
+    var title: String?
 }

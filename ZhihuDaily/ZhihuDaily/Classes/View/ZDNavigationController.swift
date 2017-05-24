@@ -13,6 +13,8 @@ class ZDNavigationController: UINavigationController {
         
         navigationBar.isHidden = true
         
+        view.backgroundColor = UIColor.white
+        
         addFullScreenReturnGes()
         
         NotificationCenter.default.addObserver(self, selector: #selector(popToHome), name: NSNotification.Name(rawValue: ZHShouldPopToHomeNotification), object: nil)

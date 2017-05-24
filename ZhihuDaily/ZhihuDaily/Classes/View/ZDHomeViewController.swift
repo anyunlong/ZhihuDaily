@@ -41,6 +41,24 @@ class ZDHomeViewController: ZDBaseViewController {
 // MARK: - UI
 extension ZDHomeViewController {
     
+    override func setupNavBar() {
+        super.setupNavBar()
+        
+        navBar.barTintColor = UIColor.app
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        navItem.title = "今日热闻"
+        let leftButton = UIButton()
+        leftButton.bounds = CGRect(x: 0, y: 0, width: 30, height: 30)
+        leftButton.setImage(#imageLiteral(resourceName: "Home_Icon"), for: .normal)
+        navItem.leftBarButtonItem = UIBarButtonItem(customView: leftButton)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        print(tableView.contentOffset.y)
+    }
+    
     override func setupTableView() {
         super.setupTableView()
         
@@ -51,6 +69,8 @@ extension ZDHomeViewController {
         tableView.register(cellNib, forCellReuseIdentifier: newsCellID)
         
         tableView.register(ZDStorySectionHeaderView.self, forHeaderFooterViewReuseIdentifier: sectionHeaderViewID)
+        
+        addObserver(tableView, forKeyPath: "contentOffset", options: [], context: nil)
     }
 }
 
@@ -93,7 +113,15 @@ extension ZDHomeViewController {
     internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let storyViewController = ZDStoryViewController()
-        storyViewController.storyId = storiesViewModel.dayViewModels[indexPath.section].day.stories[indexPath.row].id
+        
+        var cellIndex = 0
+        for section in 0..<indexPath.section {
+            cellIndex += tableView.numberOfRows(inSection: section)
+        }
+        cellIndex += indexPath.row
+        storyViewController.detailStoryViewModel.currentStoryIndex = cellIndex
+        storyViewController.detailStoryViewModel.storyIds = storiesViewModel.storyIds
+        
         navigationController?.pushViewController(storyViewController, animated: true)
     }
 }

@@ -33,6 +33,9 @@ extension AppDelegate {
         let drawerController = MMDrawerController(center: ZDNavigationController(rootViewController: homeVC), leftDrawerViewController: ZDMenuViewController(), rightDrawerViewController: nil)
         drawerController?.openDrawerGestureModeMask = .all
         drawerController?.closeDrawerGestureModeMask = .all
+        drawerController?.view.backgroundColor = UIColor.white
+        
+        UIApplication.shared.setStatusBarStyle(.lightContent, animated: false)
         
         window?.rootViewController = drawerController
         window?.makeKeyAndVisible()

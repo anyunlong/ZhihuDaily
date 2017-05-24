@@ -11,6 +11,10 @@
 		E13827431EBF518B005F0726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13827421EBF518B005F0726 /* AppDelegate.swift */; };
 		E138274A1EBF518B005F0726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13827491EBF518B005F0726 /* Assets.xcassets */; };
 		E138274D1EBF518B005F0726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E138274B1EBF518B005F0726 /* LaunchScreen.storyboard */; };
+		E145A47C1ED13BE100238C2E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145A47B1ED13BE100238C2E /* UIView+Extensions.swift */; };
+		E19491B81ED2F5680034A996 /* YLRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19491B51ED2F5680034A996 /* YLRefreshControl.swift */; };
+		E19491B91ED2F5680034A996 /* YLRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19491B61ED2F5680034A996 /* YLRefreshView.swift */; };
+		E19491BA1ED2F5680034A996 /* YLRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19491B71ED2F5680034A996 /* YLRefreshView.xib */; };
 		E1999DBE1EC190E800A5A02C /* ZDMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DBC1EC190E800A5A02C /* ZDMenuViewController.swift */; };
 		E1999DBF1EC190E800A5A02C /* ZDMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1999DBD1EC190E800A5A02C /* ZDMenuViewController.xib */; };
 		E1999DC41EC2BAF700A5A02C /* YLNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DC31EC2BAF700A5A02C /* YLNetworkTool.swift */; };
@@ -41,6 +45,8 @@
 		E1A323441EC98AFB00F6AFD0 /* ZDStoryToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A323431EC98AFB00F6AFD0 /* ZDStoryToolbar.xib */; };
 		E1A323481ECA9FE100F6AFD0 /* ZDDetailStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A323471ECA9FE100F6AFD0 /* ZDDetailStory.swift */; };
 		E1A3236C1ECB2B9B00F6AFD0 /* ZDDetailStoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A3236B1ECB2B9B00F6AFD0 /* ZDDetailStoryViewModel.swift */; };
+		E1A3236E1ECC618800F6AFD0 /* ZDDetailStoryHeadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A3236D1ECC618800F6AFD0 /* ZDDetailStoryHeadImageView.swift */; };
+		E1A323701ECC61C800F6AFD0 /* ZDDetailStoryHeadImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A3236F1ECC61C800F6AFD0 /* ZDDetailStoryHeadImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,10 @@
 		E13827491EBF518B005F0726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E138274C1EBF518B005F0726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E138274E1EBF518B005F0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E145A47B1ED13BE100238C2E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E19491B51ED2F5680034A996 /* YLRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLRefreshControl.swift; sourceTree = "<group>"; };
+		E19491B61ED2F5680034A996 /* YLRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLRefreshView.swift; sourceTree = "<group>"; };
+		E19491B71ED2F5680034A996 /* YLRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLRefreshView.xib; sourceTree = "<group>"; };
 		E1999DB31EC1673000A5A02C /* ZhihuDaily-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZhihuDaily-Bridge.h"; sourceTree = "<group>"; };
 		E1999DBC1EC190E800A5A02C /* ZDMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMenuViewController.swift; sourceTree = "<group>"; };
 		E1999DBD1EC190E800A5A02C /* ZDMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDMenuViewController.xib; sourceTree = "<group>"; };
@@ -83,6 +93,8 @@
 		E1A323431EC98AFB00F6AFD0 /* ZDStoryToolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDStoryToolbar.xib; sourceTree = "<group>"; };
 		E1A323471ECA9FE100F6AFD0 /* ZDDetailStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDetailStory.swift; sourceTree = "<group>"; };
 		E1A3236B1ECB2B9B00F6AFD0 /* ZDDetailStoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDetailStoryViewModel.swift; sourceTree = "<group>"; };
+		E1A3236D1ECC618800F6AFD0 /* ZDDetailStoryHeadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDetailStoryHeadImageView.swift; sourceTree = "<group>"; };
+		E1A3236F1ECC61C800F6AFD0 /* ZDDetailStoryHeadImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDDetailStoryHeadImageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,16 @@
 			path = ZhihuDaily;
 			sourceTree = "<group>";
 		};
+		E19491B41ED2F5680034A996 /* YLRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				E19491B51ED2F5680034A996 /* YLRefreshControl.swift */,
+				E19491B61ED2F5680034A996 /* YLRefreshView.swift */,
+				E19491B71ED2F5680034A996 /* YLRefreshView.xib */,
+			);
+			path = YLRefreshControl;
+			sourceTree = "<group>";
+		};
 		E1999DA51EC04CD300A5A02C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +207,7 @@
 		E1999DAF1EC0502000A5A02C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E19491B41ED2F5680034A996 /* YLRefreshControl */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -196,6 +219,7 @@
 				E1999DBD1EC190E800A5A02C /* ZDMenuViewController.xib */,
 				E1999DD11EC3029F00A5A02C /* ZDThemeCell.swift */,
 				E1999DD21EC3029F00A5A02C /* ZDThemeCell.xib */,
+				E1A323391EC94A4A00F6AFD0 /* ZDStoryViewController.swift */,
 				E1999DD51EC332F600A5A02C /* ZDHomeViewController.swift */,
 				E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */,
 				E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */,
@@ -204,10 +228,11 @@
 				E1A322D81EC6E9D700F6AFD0 /* ZDNewsCell.swift */,
 				E1A322D91EC6E9D700F6AFD0 /* ZDNewsCell.xib */,
 				E1A322E81EC7F39C00F6AFD0 /* ZDStorySectionHeaderView.swift */,
-				E1A323391EC94A4A00F6AFD0 /* ZDStoryViewController.swift */,
 				E1A3233D1EC9553400F6AFD0 /* ZDBaseViewController.swift */,
 				E1A323411EC98AE900F6AFD0 /* ZDStoryToolbar.swift */,
 				E1A323431EC98AFB00F6AFD0 /* ZDStoryToolbar.xib */,
+				E1A3236D1ECC618800F6AFD0 /* ZDDetailStoryHeadImageView.swift */,
+				E1A3236F1ECC61C800F6AFD0 /* ZDDetailStoryHeadImageView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +251,7 @@
 			children = (
 				E1A323351EC84AD500F6AFD0 /* Date+Extensions.swift */,
 				E1A322ED1EC8328500F6AFD0 /* UIColor+Extensions.swift */,
+				E145A47B1ED13BE100238C2E /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,8 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A322D71EC6E4FD00F6AFD0 /* ZDRotationView.xib in Resources */,
+				E1A323701ECC61C800F6AFD0 /* ZDDetailStoryHeadImageView.xib in Resources */,
 				E138274D1EBF518B005F0726 /* LaunchScreen.storyboard in Resources */,
 				E1999DD41EC3029F00A5A02C /* ZDThemeCell.xib in Resources */,
+				E19491BA1ED2F5680034A996 /* YLRefreshView.xib in Resources */,
 				E1A323441EC98AFB00F6AFD0 /* ZDStoryToolbar.xib in Resources */,
 				E1999DBF1EC190E800A5A02C /* ZDMenuViewController.xib in Resources */,
 				E138274A1EBF518B005F0726 /* Assets.xcassets in Resources */,
@@ -381,16 +409,20 @@
 				E1A323421EC98AE900F6AFD0 /* ZDStoryToolbar.swift in Sources */,
 				E1A322DA1EC6E9D700F6AFD0 /* ZDNewsCell.swift in Sources */,
 				E1999DCA1EC2DFB200A5A02C /* ZDTheme.swift in Sources */,
+				E145A47C1ED13BE100238C2E /* UIView+Extensions.swift in Sources */,
 				E1999DC41EC2BAF700A5A02C /* YLNetworkTool.swift in Sources */,
 				E1A322D51EC6E4C500F6AFD0 /* ZDRotationView.swift in Sources */,
 				E1A322E31EC734EA00F6AFD0 /* ZDDay.swift in Sources */,
 				E1A322EE1EC8328500F6AFD0 /* UIColor+Extensions.swift in Sources */,
+				E19491B81ED2F5680034A996 /* YLRefreshControl.swift in Sources */,
 				E1999DDA1EC3432600A5A02C /* ZDThemeViewController.swift in Sources */,
 				E1999DC61EC2D99800A5A02C /* YLNetworkTool+Extension.swift in Sources */,
 				E1999DD31EC3029F00A5A02C /* ZDThemeCell.swift in Sources */,
 				E1A322BC1EC6C66100F6AFD0 /* ZDNavigationController.swift in Sources */,
 				E13827431EBF518B005F0726 /* AppDelegate.swift in Sources */,
+				E19491B91ED2F5680034A996 /* YLRefreshView.swift in Sources */,
 				E1A322E91EC7F39C00F6AFD0 /* ZDStorySectionHeaderView.swift in Sources */,
+				E1A3236E1ECC618800F6AFD0 /* ZDDetailStoryHeadImageView.swift in Sources */,
 				E1A322E11EC6F36E00F6AFD0 /* ZDStoriesViewModel.swift in Sources */,
 				E1999DBE1EC190E800A5A02C /* ZDMenuViewController.swift in Sources */,
 			);
@@ -509,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4YLDDZQ28N;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -525,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4YLDDZQ28N;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

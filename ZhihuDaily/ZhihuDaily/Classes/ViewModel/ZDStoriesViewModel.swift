@@ -10,6 +10,8 @@ class ZDStoriesViewModel {
     
     lazy var dayViewModels = [ZDDayViewModel]()
     
+    lazy var storyIds = [String]()
+    
     func loadStories(completion:@escaping (_ isSuccess: Bool) -> Void) {
         
         YLNetworkTool.stories(dateString: dayViewModels.last?.day.dateString) {
@@ -30,6 +32,8 @@ class ZDStoriesViewModel {
                 story.image = storyJSON["images"][0].stringValue
                 
                 day.stories.append(story)
+                
+                self.storyIds.append(story.id ?? "")
             }
             
             let dayViewModel = ZDDayViewModel(day: day)

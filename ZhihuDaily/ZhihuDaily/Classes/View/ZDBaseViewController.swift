@@ -30,6 +30,8 @@ extension ZDBaseViewController {
     
     func setupUI() {
         
+        view.backgroundColor = UIColor.white
+        
         automaticallyAdjustsScrollViewInsets = false
         
         tableView.tableHeaderView = ZDRotationView.rotationView()
