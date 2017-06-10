@@ -14,6 +14,8 @@ class ZDBaseViewController: UIViewController {
     
     lazy var tableView = UITableView()
     
+    lazy var headImageView = ZDHeadImageView.headImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +36,7 @@ extension ZDBaseViewController {
         
         automaticallyAdjustsScrollViewInsets = false
         
-        tableView.tableHeaderView = ZDRotationView.rotationView()
+        tableView.tableHeaderView = headImageView
         
         setupTableView()
         

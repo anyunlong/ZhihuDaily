@@ -28,7 +28,7 @@ extension YLNetworkTool {
         }
     }
     
-    class func stories(dateString: String? = nil, completion: @escaping (_ dateString: String?, _ stories: [JSON]?) -> Void) {
+    class func stories(dateString: String? = nil, completion: @escaping (_ dateString: String?, _ stories: [JSON]?, _ topStories: [JSON]?) -> Void) {
         
         var routing = "latest"
         if let dateString = dateString {
@@ -38,17 +38,22 @@ extension YLNetworkTool {
         YLNetworkTool.request(URLString: "http://news-at.zhihu.com/api/4/news/\(routing)") {
             
             guard let jsonObject = $0 else {
-                completion(nil, nil)
+                completion(nil, nil, nil)
                 return
             }
             
             let json = JSON(jsonObject)
             let dateString = json["date"].stringValue
             guard let storiesJSON = json["stories"].array else {
-                completion(nil, nil)
+                completion(nil, nil, nil)
                 return
             }
-            completion(dateString, storiesJSON)
+            
+            guard let topStoriesJSON = json["top_stories"].array else {
+                completion(dateString, storiesJSON, nil)
+                return
+            }
+            completion(dateString, storiesJSON, topStoriesJSON)
         }
     }
     

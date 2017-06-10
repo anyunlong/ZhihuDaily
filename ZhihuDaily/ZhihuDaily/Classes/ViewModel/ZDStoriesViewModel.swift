@@ -10,6 +10,8 @@ class ZDStoriesViewModel {
     
     lazy var dayViewModels = [ZDDayViewModel]()
     
+    lazy var topStories = [ZDStory]()
+    
     lazy var storyIds = [String]()
     
     func loadStories(completion:@escaping (_ isSuccess: Bool) -> Void) {
@@ -39,6 +41,17 @@ class ZDStoriesViewModel {
             let dayViewModel = ZDDayViewModel(day: day)
             
             self.dayViewModels.append(dayViewModel)
+            
+            if let topStoriesJSON = $2 {
+                
+                for topStoryJSON in topStoriesJSON {
+                    
+                    let story = ZDStory()
+                    story.yy_modelSet(with: topStoryJSON.dictionaryObject ?? [:])
+                    
+                    self.topStories.append(story)
+                }
+            }
             
             completion(true)
         }

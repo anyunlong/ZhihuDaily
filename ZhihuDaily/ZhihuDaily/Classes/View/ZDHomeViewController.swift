@@ -15,11 +15,17 @@ class ZDHomeViewController: ZDBaseViewController {
     
     fileprivate var isPullup = false
     
+    fileprivate var makeNavBarHiddenHeight: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         NotificationCenter.default.addObserver(self, selector: #selector(loadData), name: NSNotification.Name(rawValue: ZHHomePageShouldLoadDataNotification), object: nil)
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//    }
     
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -31,9 +37,14 @@ class ZDHomeViewController: ZDBaseViewController {
                 
             if $0 == true {
                 self.tableView.reloadData()
+                if !self.isPullup {
+                    self.headImageView.topStories = self.storiesViewModel.topStories
+                }
             }
                 
             self.isPullup = false
+            
+            print(self.tableView.subviews)
         }
     }
 }
@@ -46,17 +57,20 @@ extension ZDHomeViewController {
         
         navBar.barTintColor = UIColor.app
         navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        navBar.subviews[0].alpha = 0
         
         navItem.title = "今日热闻"
         let leftButton = UIButton()
         leftButton.bounds = CGRect(x: 0, y: 0, width: 30, height: 30)
         leftButton.setImage(#imageLiteral(resourceName: "Home_Icon"), for: .normal)
         navItem.leftBarButtonItem = UIBarButtonItem(customView: leftButton)
+        
+        makeNavBarHiddenHeight = headImageView.bounds.height - UIApplication.shared.statusBarFrame.height
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
-        print(tableView.contentOffset.y)
+        navBar.subviews[0].alpha = tableView.contentOffset.y / 180.0
     }
     
     override func setupTableView() {
@@ -70,7 +84,7 @@ extension ZDHomeViewController {
         
         tableView.register(ZDStorySectionHeaderView.self, forHeaderFooterViewReuseIdentifier: sectionHeaderViewID)
         
-        addObserver(tableView, forKeyPath: "contentOffset", options: [], context: nil)
+        tableView.addObserver(self, forKeyPath: "contentOffset", options: [], context: nil)
     }
 }
 

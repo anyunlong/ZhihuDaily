@@ -12,6 +12,10 @@
 		E138274A1EBF518B005F0726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13827491EBF518B005F0726 /* Assets.xcassets */; };
 		E138274D1EBF518B005F0726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E138274B1EBF518B005F0726 /* LaunchScreen.storyboard */; };
 		E145A47C1ED13BE100238C2E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145A47B1ED13BE100238C2E /* UIView+Extensions.swift */; };
+		E1511C941EDC19BD0025A3AF /* ZDScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1511C931EDC19BD0025A3AF /* ZDScrollView.swift */; };
+		E1511C9C1EE162B80025A3AF /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1511C9B1EE162B80025A3AF /* UIImageView+WebImage.swift */; };
+		E162092B1ED8630900530D3E /* ZDHeadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162092A1ED8630900530D3E /* ZDHeadImageView.swift */; };
+		E162092D1ED8631400530D3E /* ZDHeadImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162092C1ED8631400530D3E /* ZDHeadImageView.xib */; };
 		E19491B81ED2F5680034A996 /* YLRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19491B51ED2F5680034A996 /* YLRefreshControl.swift */; };
 		E19491B91ED2F5680034A996 /* YLRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19491B61ED2F5680034A996 /* YLRefreshView.swift */; };
 		E19491BA1ED2F5680034A996 /* YLRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19491B71ED2F5680034A996 /* YLRefreshView.xib */; };
@@ -28,8 +32,6 @@
 		E1999DD81EC3408600A5A02C /* ZhihuDailyCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DD71EC3408600A5A02C /* ZhihuDailyCommon.swift */; };
 		E1999DDA1EC3432600A5A02C /* ZDThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */; };
 		E1A322BC1EC6C66100F6AFD0 /* ZDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */; };
-		E1A322D51EC6E4C500F6AFD0 /* ZDRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322D41EC6E4C500F6AFD0 /* ZDRotationView.swift */; };
-		E1A322D71EC6E4FD00F6AFD0 /* ZDRotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A322D61EC6E4FD00F6AFD0 /* ZDRotationView.xib */; };
 		E1A322DA1EC6E9D700F6AFD0 /* ZDNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322D81EC6E9D700F6AFD0 /* ZDNewsCell.swift */; };
 		E1A322DB1EC6E9D700F6AFD0 /* ZDNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A322D91EC6E9D700F6AFD0 /* ZDNewsCell.xib */; };
 		E1A322DD1EC6F06F00F6AFD0 /* ZDStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A322DC1EC6F06F00F6AFD0 /* ZDStory.swift */; };
@@ -59,6 +61,10 @@
 		E138274C1EBF518B005F0726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E138274E1EBF518B005F0726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E145A47B1ED13BE100238C2E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E1511C931EDC19BD0025A3AF /* ZDScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDScrollView.swift; sourceTree = "<group>"; };
+		E1511C9B1EE162B80025A3AF /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		E162092A1ED8630900530D3E /* ZDHeadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDHeadImageView.swift; sourceTree = "<group>"; };
+		E162092C1ED8631400530D3E /* ZDHeadImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDHeadImageView.xib; sourceTree = "<group>"; };
 		E19491B51ED2F5680034A996 /* YLRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLRefreshControl.swift; sourceTree = "<group>"; };
 		E19491B61ED2F5680034A996 /* YLRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLRefreshView.swift; sourceTree = "<group>"; };
 		E19491B71ED2F5680034A996 /* YLRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLRefreshView.xib; sourceTree = "<group>"; };
@@ -76,8 +82,6 @@
 		E1999DD71EC3408600A5A02C /* ZhihuDailyCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhihuDailyCommon.swift; sourceTree = "<group>"; };
 		E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThemeViewController.swift; sourceTree = "<group>"; };
 		E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDNavigationController.swift; sourceTree = "<group>"; };
-		E1A322D41EC6E4C500F6AFD0 /* ZDRotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDRotationView.swift; sourceTree = "<group>"; };
-		E1A322D61EC6E4FD00F6AFD0 /* ZDRotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDRotationView.xib; sourceTree = "<group>"; };
 		E1A322D81EC6E9D700F6AFD0 /* ZDNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDNewsCell.swift; sourceTree = "<group>"; };
 		E1A322D91EC6E9D700F6AFD0 /* ZDNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDNewsCell.xib; sourceTree = "<group>"; };
 		E1A322DC1EC6F06F00F6AFD0 /* ZDStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDStory.swift; sourceTree = "<group>"; };
@@ -223,8 +227,6 @@
 				E1999DD51EC332F600A5A02C /* ZDHomeViewController.swift */,
 				E1999DD91EC3432600A5A02C /* ZDThemeViewController.swift */,
 				E1A322BB1EC6C66100F6AFD0 /* ZDNavigationController.swift */,
-				E1A322D41EC6E4C500F6AFD0 /* ZDRotationView.swift */,
-				E1A322D61EC6E4FD00F6AFD0 /* ZDRotationView.xib */,
 				E1A322D81EC6E9D700F6AFD0 /* ZDNewsCell.swift */,
 				E1A322D91EC6E9D700F6AFD0 /* ZDNewsCell.xib */,
 				E1A322E81EC7F39C00F6AFD0 /* ZDStorySectionHeaderView.swift */,
@@ -233,6 +235,9 @@
 				E1A323431EC98AFB00F6AFD0 /* ZDStoryToolbar.xib */,
 				E1A3236D1ECC618800F6AFD0 /* ZDDetailStoryHeadImageView.swift */,
 				E1A3236F1ECC61C800F6AFD0 /* ZDDetailStoryHeadImageView.xib */,
+				E162092A1ED8630900530D3E /* ZDHeadImageView.swift */,
+				E162092C1ED8631400530D3E /* ZDHeadImageView.xib */,
+				E1511C931EDC19BD0025A3AF /* ZDScrollView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				E1A323351EC84AD500F6AFD0 /* Date+Extensions.swift */,
 				E1A322ED1EC8328500F6AFD0 /* UIColor+Extensions.swift */,
 				E145A47B1ED13BE100238C2E /* UIView+Extensions.swift */,
+				E1511C9B1EE162B80025A3AF /* UIImageView+WebImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,7 +334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A322D71EC6E4FD00F6AFD0 /* ZDRotationView.xib in Resources */,
 				E1A323701ECC61C800F6AFD0 /* ZDDetailStoryHeadImageView.xib in Resources */,
 				E138274D1EBF518B005F0726 /* LaunchScreen.storyboard in Resources */,
 				E1999DD41EC3029F00A5A02C /* ZDThemeCell.xib in Resources */,
@@ -336,6 +341,7 @@
 				E1A323441EC98AFB00F6AFD0 /* ZDStoryToolbar.xib in Resources */,
 				E1999DBF1EC190E800A5A02C /* ZDMenuViewController.xib in Resources */,
 				E138274A1EBF518B005F0726 /* Assets.xcassets in Resources */,
+				E162092D1ED8631400530D3E /* ZDHeadImageView.xib in Resources */,
 				E1A322DB1EC6E9D700F6AFD0 /* ZDNewsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1511C941EDC19BD0025A3AF /* ZDScrollView.swift in Sources */,
 				E1999DCC1EC2F52A00A5A02C /* ZDObject.swift in Sources */,
 				E1999DD81EC3408600A5A02C /* ZhihuDailyCommon.swift in Sources */,
 				E1A323361EC84AD500F6AFD0 /* Date+Extensions.swift in Sources */,
@@ -411,7 +418,6 @@
 				E1999DCA1EC2DFB200A5A02C /* ZDTheme.swift in Sources */,
 				E145A47C1ED13BE100238C2E /* UIView+Extensions.swift in Sources */,
 				E1999DC41EC2BAF700A5A02C /* YLNetworkTool.swift in Sources */,
-				E1A322D51EC6E4C500F6AFD0 /* ZDRotationView.swift in Sources */,
 				E1A322E31EC734EA00F6AFD0 /* ZDDay.swift in Sources */,
 				E1A322EE1EC8328500F6AFD0 /* UIColor+Extensions.swift in Sources */,
 				E19491B81ED2F5680034A996 /* YLRefreshControl.swift in Sources */,
@@ -424,6 +430,8 @@
 				E1A322E91EC7F39C00F6AFD0 /* ZDStorySectionHeaderView.swift in Sources */,
 				E1A3236E1ECC618800F6AFD0 /* ZDDetailStoryHeadImageView.swift in Sources */,
 				E1A322E11EC6F36E00F6AFD0 /* ZDStoriesViewModel.swift in Sources */,
+				E1511C9C1EE162B80025A3AF /* UIImageView+WebImage.swift in Sources */,
+				E162092B1ED8630900530D3E /* ZDHeadImageView.swift in Sources */,
 				E1999DBE1EC190E800A5A02C /* ZDMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,7 +551,7 @@
 				DEVELOPMENT_TEAM = 4YLDDZQ28N;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.ccut.ZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,7 +568,7 @@
 				DEVELOPMENT_TEAM = 4YLDDZQ28N;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = ZhihuDaily/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.ccut.ZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
